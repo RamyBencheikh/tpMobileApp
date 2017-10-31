@@ -1,18 +1,21 @@
 <ion-header>
   <ion-navbar>
-    <button ion-button menuToggle>
-      <ion-icon name="menu"></ion-icon>
-    </button>
     <ion-title>Home</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  <h3>Ionic Menu Starter</h3>
+  <h1>{{app.nom}} {{app.version}} </h1>
 
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
-  </p>
+  <ion-item>
+    <ion-label floating>Nom</ion-label>
+    <ion-input type="text" [(ngModel)]="appnom"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label floating>Version</ion-label>
+    <ion-input type="text" [(ngModel)]="app.version"></ion-input>
+  </ion-item>
 
-  <button ion-button secondary menuToggle>Toggle Menu</button>
+  <button ion-button >Light Outline</button>
+
 </ion-content>

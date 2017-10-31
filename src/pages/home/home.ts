@@ -10,7 +10,7 @@ export class HomePage {
 
   constructor(public navCtrl: NavController) {
     this.app.nom = "Nom App";
-    this.app.version = 0.1;
+    this.app.version = 0.2;
   }
 
 }

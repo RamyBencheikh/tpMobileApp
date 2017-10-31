@@ -6,13 +6,14 @@ import { NavController } from 'ionic-angular';
   templateUrl: 'home.html'
 })
 export class HomePage {
-  app: any = { nom: String, version: Number};
+  app: App;
 
   constructor(public navCtrl: NavController) {
-    this.app.nom = "Nom App";
-    this.app.version = 0.2;
+  this.app = new App("nom", 0.4);
   }
-
+   change(){
+    console.log("COUCOU");
+  }
 }
 class App {
 constructor(public nom: String, public version: Number){

@@ -24,3 +24,4 @@ $ ionic cordova run ios
 
 Substitute ios for android if not on a Mac.
 
+####    BEN CHEIKH Ramy B3 Ingesup

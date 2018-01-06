@@ -9,6 +9,9 @@ import {GeolocPage} from "../pages/geoloc/geoloc";
 import  {VibrationPage} from "../pages/vibration/vibration";
 import  {ToastingPage} from "../pages/toasting/toasting";
 import {TextspeechPage} from "../pages/textspeech/textspeech";
+import {ShakingPage} from "../pages/shaking/shaking";
+import {VideoPage} from "../pages/video/video";
+
 @Component({
   templateUrl: 'app.html'
 })
@@ -30,6 +33,8 @@ export class MyApp {
         { title: 'Vibration', component: VibrationPage},
         { title: 'Notification', component: ToastingPage},
         { title: 'Text To Speech', component: TextspeechPage},
+        {title: 'Shaking', component: ShakingPage},
+        { title: 'Video', component: VideoPage},
     ];
 
   }

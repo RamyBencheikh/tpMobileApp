@@ -9,15 +9,14 @@
 
   <ion-item>
     <ion-label floating>Nom</ion-label>
-    <ion-input type="text" [(ngModel)]="appnom"></ion-input>
+    <ion-input type="text" [(ngModel)]="app.nom"></ion-input>
   </ion-item>
   <ion-item>
     <ion-label floating>Version</ion-label>
     <ion-input type="text" [(ngModel)]="app.version"></ion-input>
   </ion-item>
-
-  <button ion-button (click)='change()' >Try</button>
-  <button ion-button color="danger" round (click)='takePicture()'>Take Picture</button>
+  <button ion-button color="danger" round (click)='takepic()'>Take Picture</button>
+  <br>
     Latest Picture:
     <img [src]="base64Image" *ngIf="base64Image" />
 

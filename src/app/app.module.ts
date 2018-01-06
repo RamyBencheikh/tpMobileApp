@@ -18,6 +18,12 @@ import {ToastingPageModule} from "../pages/toasting/toasting.module";
 import {Toast} from "@ionic-native/toast";
 import {TextspeechPageModule} from "../pages/textspeech/textspeech.module";
 import {TextToSpeech} from "@ionic-native/text-to-speech";
+import {ShakingPageModule} from "../pages/shaking/shaking.module";
+import {Shake} from "@ionic-native/shake";
+import {MapsPageModule} from "../pages/maps/maps.module";
+import {Base64ToGallery} from "@ionic-native/base64-to-gallery";
+import {VideoPageModule} from "../pages/video/video.module";
+import {MediaCapture} from "@ionic-native/media-capture";
 
 @NgModule({
   declarations: [
@@ -33,6 +39,9 @@ import {TextToSpeech} from "@ionic-native/text-to-speech";
       VibrationPageModule,
       ToastingPageModule,
       TextspeechPageModule,
+      ShakingPageModule,
+      MapsPageModule,
+      VideoPageModule,
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -42,8 +51,11 @@ import {TextToSpeech} from "@ionic-native/text-to-speech";
 
   ],
   providers: [
-      TextToSpeech,
-      Toast,
+    MediaCapture,
+    Base64ToGallery,
+    Shake,
+    TextToSpeech,
+    Toast,
     Vibration,
     Geolocation,
     Camera,
